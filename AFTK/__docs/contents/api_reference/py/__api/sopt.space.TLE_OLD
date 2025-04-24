@@ -1,0 +1,67 @@
+TLE_OLD
+=======
+
+.. currentmodule:: sopt.space
+
+.. autoclass:: TLE_OLD
+   :show-inheritance:
+
+   .. rubric:: Attributes Summary
+
+   .. autosummary::
+
+      ~TLE_OLD.argument_of_perigee
+      ~TLE_OLD.ascending_node
+      ~TLE_OLD.bstar_drag_term
+      ~TLE_OLD.classification
+      ~TLE_OLD.eccentricity
+      ~TLE_OLD.element_set_number
+      ~TLE_OLD.ephemeris_type
+      ~TLE_OLD.ephemeris_types
+      ~TLE_OLD.epoch
+      ~TLE_OLD.first_time_derivative_mean_motion
+      ~TLE_OLD.inclination
+      ~TLE_OLD.launch_number_of_the_year
+      ~TLE_OLD.launch_piece
+      ~TLE_OLD.launch_year
+      ~TLE_OLD.mean_anomaly
+      ~TLE_OLD.mean_motion
+      ~TLE_OLD.revolution_number_at_epoch
+      ~TLE_OLD.satellite_classification
+      ~TLE_OLD.satellite_number
+      ~TLE_OLD.second_time_derivative_mean_motion
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~TLE_OLD.checksum
+      ~TLE_OLD.from_orbital_elements
+
+   .. rubric:: Attributes Documentation
+
+   .. autoattribute:: argument_of_perigee
+   .. autoattribute:: ascending_node
+   .. autoattribute:: bstar_drag_term
+   .. autoattribute:: classification
+   .. autoattribute:: eccentricity
+   .. autoattribute:: element_set_number
+   .. autoattribute:: ephemeris_type
+   .. autoattribute:: ephemeris_types
+   .. autoattribute:: epoch
+   .. autoattribute:: first_time_derivative_mean_motion
+   .. autoattribute:: inclination
+   .. autoattribute:: launch_number_of_the_year
+   .. autoattribute:: launch_piece
+   .. autoattribute:: launch_year
+   .. autoattribute:: mean_anomaly
+   .. autoattribute:: mean_motion
+   .. autoattribute:: revolution_number_at_epoch
+   .. autoattribute:: satellite_classification
+   .. autoattribute:: satellite_number
+   .. autoattribute:: second_time_derivative_mean_motion
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: checksum
+   .. automethod:: from_orbital_elements

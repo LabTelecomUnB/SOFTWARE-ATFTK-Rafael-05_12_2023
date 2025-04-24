@@ -1,0 +1,29 @@
+OrbitalElements
+===============
+
+.. currentmodule:: sopt.space.ephemerides
+
+.. autoclass:: OrbitalElements
+   :show-inheritance:
+
+   .. rubric:: Attributes Summary
+
+   .. autosummary::
+
+      ~OrbitalElements.arp
+      ~OrbitalElements.ecc
+      ~OrbitalElements.epoch
+      ~OrbitalElements.inc
+      ~OrbitalElements.raa
+      ~OrbitalElements.sma
+      ~OrbitalElements.tra
+
+   .. rubric:: Attributes Documentation
+
+   .. autoattribute:: arp
+   .. autoattribute:: ecc
+   .. autoattribute:: epoch
+   .. autoattribute:: inc
+   .. autoattribute:: raa
+   .. autoattribute:: sma
+   .. autoattribute:: tra

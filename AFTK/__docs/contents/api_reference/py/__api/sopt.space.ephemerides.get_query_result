@@ -1,0 +1,6 @@
+get_query_result
+================
+
+.. currentmodule:: sopt.space.ephemerides
+
+.. autofunction:: get_query_result

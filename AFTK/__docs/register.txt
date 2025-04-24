@@ -1,0 +1,16 @@
+Antenna Field Toolkit (AFTK) é um pacote ou biblioteca, escrito em C/Cython, que fornece um ecossistema de serviços em Python relacionados à simulação rápida do campo eletromagnético de antenas no domínio temporal e espectral.  
+
+No contexto do AFTK, uma antena é sempre representada (em uma dada frequência) através dos seus Spherical Mode Coefficients (SMC): uma coleção enumerável de coeficientes complexos capazes de caracterizar completamente o campo eletromagnético (próximo ou distante) dessa antena. Nesse sentido, o AFTK prover principalmente os seguintes serviços:
+
+1. Estimação dos SMC de uma antena através de amostras do campo de radiação (Radiation Field) coletadas em campanhas de ensaios realizados nessa antena.
+
+2. Reconstrução do campo eletromagnético (fasor) de uma antena em qualquer ponto do espaço dado os seus SMC.
+
+3. Determinação de propriedades operacionais de uma antena como ganho diretivo, diretividade, potência irradiada, intensidade de radiação, etc.
+
+4. Reconstrução da resposta temporal do campo eletromagnético de uma antena a partir de uma sinal de entrada.
+
+Sendo uma biblioteca, AFTK é principalmente pensado para ser utilizado como base para o desenvolvimento de outros programas e rotinas que necessitem de seus serviços, não sendo portanto, um fim em si próprio. Além disso, sua implementação em C/Cython fornece o desempenho necessário para a execução rápida de suas rotinas (computacionalmente dispendiosas) e o tornam a ferramenta ideal, por exemplo, para a análise de otimização de antenas.
+
+Por fim, ressalta-se que embora alguns de seus serviços estejam amadurecidos, vislumbra-se a implementação de outros como a (1) construção e modelagem de arrays de antenas; (2) campo eletromagnético de antenas em plataformas em movimento (saélites); (3)
+

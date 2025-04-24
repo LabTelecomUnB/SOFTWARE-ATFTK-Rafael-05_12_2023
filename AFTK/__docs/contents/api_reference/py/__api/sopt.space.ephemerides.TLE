@@ -1,0 +1,39 @@
+TLE
+===
+
+.. currentmodule:: sopt.space.ephemerides
+
+.. autoclass:: TLE
+   :show-inheritance:
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~TLE.eccentric_anomaly_from_mean_anomaly
+      ~TLE.eccentric_anomaly_from_true_anomaly
+      ~TLE.from_orbital_elements
+      ~TLE.mean_anomaly_from_eccentric_anomaly
+      ~TLE.mean_anomaly_from_true_anomaly
+      ~TLE.parse_anomaly
+      ~TLE.parse_distance
+      ~TLE.parse_eccentricity
+      ~TLE.perigee_and_apogee_from_sma_and_ecc
+      ~TLE.sma_and_ecc_from_perigee_and_apogee
+      ~TLE.true_anomaly_from_eccentric_anomaly
+      ~TLE.true_anomaly_from_mean_anomaly
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: eccentric_anomaly_from_mean_anomaly
+   .. automethod:: eccentric_anomaly_from_true_anomaly
+   .. automethod:: from_orbital_elements
+   .. automethod:: mean_anomaly_from_eccentric_anomaly
+   .. automethod:: mean_anomaly_from_true_anomaly
+   .. automethod:: parse_anomaly
+   .. automethod:: parse_distance
+   .. automethod:: parse_eccentricity
+   .. automethod:: perigee_and_apogee_from_sma_and_ecc
+   .. automethod:: sma_and_ecc_from_perigee_and_apogee
+   .. automethod:: true_anomaly_from_eccentric_anomaly
+   .. automethod:: true_anomaly_from_mean_anomaly

@@ -1,0 +1,33 @@
+Satellite
+=========
+
+.. currentmodule:: sopt.space
+
+.. autoclass:: Satellite
+   :show-inheritance:
+
+   .. rubric:: Attributes Summary
+
+   .. autosummary::
+
+      ~Satellite.ephemerides
+      ~Satellite.propagator
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~Satellite.load
+      ~Satellite.propagate
+      ~Satellite.save
+
+   .. rubric:: Attributes Documentation
+
+   .. autoattribute:: ephemerides
+   .. autoattribute:: propagator
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: load
+   .. automethod:: propagate
+   .. automethod:: save

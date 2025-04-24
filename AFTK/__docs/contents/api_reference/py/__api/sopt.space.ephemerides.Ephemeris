@@ -1,0 +1,37 @@
+Ephemeris
+=========
+
+.. currentmodule:: sopt.space.ephemerides
+
+.. autoclass:: Ephemeris
+   :show-inheritance:
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~Ephemeris.eccentric_anomaly_from_mean_anomaly
+      ~Ephemeris.eccentric_anomaly_from_true_anomaly
+      ~Ephemeris.mean_anomaly_from_eccentric_anomaly
+      ~Ephemeris.mean_anomaly_from_true_anomaly
+      ~Ephemeris.parse_anomaly
+      ~Ephemeris.parse_distance
+      ~Ephemeris.parse_eccentricity
+      ~Ephemeris.perigee_and_apogee_from_sma_and_ecc
+      ~Ephemeris.sma_and_ecc_from_perigee_and_apogee
+      ~Ephemeris.true_anomaly_from_eccentric_anomaly
+      ~Ephemeris.true_anomaly_from_mean_anomaly
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: eccentric_anomaly_from_mean_anomaly
+   .. automethod:: eccentric_anomaly_from_true_anomaly
+   .. automethod:: mean_anomaly_from_eccentric_anomaly
+   .. automethod:: mean_anomaly_from_true_anomaly
+   .. automethod:: parse_anomaly
+   .. automethod:: parse_distance
+   .. automethod:: parse_eccentricity
+   .. automethod:: perigee_and_apogee_from_sma_and_ecc
+   .. automethod:: sma_and_ecc_from_perigee_and_apogee
+   .. automethod:: true_anomaly_from_eccentric_anomaly
+   .. automethod:: true_anomaly_from_mean_anomaly

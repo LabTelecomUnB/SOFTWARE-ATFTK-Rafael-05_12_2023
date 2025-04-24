@@ -1,0 +1,6 @@
+get_elements_from_sat_name
+==========================
+
+.. currentmodule:: sopt.space.ephemerides
+
+.. autofunction:: get_elements_from_sat_name

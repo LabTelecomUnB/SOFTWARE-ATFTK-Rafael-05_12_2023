@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16.0px"
+   height="16.0px"
+   viewBox="0 0 16.0 16.0"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="smet_3sat_64px.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   inkscape:export-filename="smet_3sat_512px.png"
+   inkscape:export-xdpi="813.05768"
+   inkscape:export-ydpi="813.05768"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview16571"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="4.3893395"
+     inkscape:cx="-188.9806"
+     inkscape:cy="-235.57075"
+     inkscape:window-width="1898"
+     inkscape:window-height="1025"
+     inkscape:window-x="3849"
+     inkscape:window-y="42"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid17057" />
+  </sodipodi:namedview>
+  <defs
+     id="defs16566" />
+  <g
+     id="g24236">
+    <g
+       inkscape:label="sensors"
+       inkscape:groupmode="layer"
+       id="layer1"
+       transform="matrix(0.12501867,0,0,0.12501867,-223.96178,-247.25599)">
+      <path
+         sodipodi:type="star"
+         style="display:inline;fill:#7f7f7f;fill-rule:evenodd;paint-order:markers stroke fill;fill-opacity:1"
+         id="path21843"
+         inkscape:flatsided="false"
+         sodipodi:sides="3"
+         sodipodi:cx="284.06705"
+         sodipodi:cy="459.47394"
+         sodipodi:r1="253.44048"
+         sodipodi:r2="96.966113"
+         sodipodi:arg1="0.51885683"
+         sodipodi:arg2="-0.28941677"
+         inkscape:rounded="1.9775848e-16"
+         inkscape:randomized="0"
+         d="M 504.15137,585.15196 377.00038,431.80046 65.184523,587.23354 261.56631,553.79331 l 21.29894,-347.757 -69.23081,186.79174 z"
+         inkscape:transform-center-x="-0.17078163"
+         inkscape:transform-center-y="-26.813688"
+         transform="matrix(1.0953489,0,0,1.1508577,-311.15256,-528.78909)"
+         sodipodi:insensitive="true"
+         inkscape:label="coverage" />
+      <path
+         sodipodi:type="star"
+         style="display:none;fill:#ff7f0e;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.00157;stroke-opacity:1;paint-order:markers stroke fill"
+         id="path21843-3"
+         inkscape:flatsided="false"
+         sodipodi:sides="3"
+         sodipodi:cx="284.06705"
+         sodipodi:cy="459.47394"
+         sodipodi:r1="245.54289"
+         sodipodi:r2="85.560837"
+         sodipodi:arg1="0.94453301"
+         sodipodi:arg2="0.91077086"
+         inkscape:rounded="1.9775848e-16"
+         inkscape:randomized="0"
+         d="M 427.98497,658.41851 336.52756,527.065 39.817031,484.63823 199.30122,471.11054 384.39914,235.36507 316.37237,380.24627 Z"
+         inkscape:transform-center-x="0.17077815"
+         inkscape:transform-center-y="-26.813688"
+         transform="matrix(-1.0953489,0,0,1.1508577,311.15256,-528.78909)"
+         sodipodi:insensitive="true"
+         inkscape:label="links" />
+      <path
+         sodipodi:type="star"
+         style="display:inline;fill:#ff7f0e;fill-opacity:1;fill-rule:evenodd;paint-order:markers stroke fill"
+         id="path25306"
+         inkscape:flatsided="false"
+         sodipodi:sides="3"
+         sodipodi:cx="284.06705"
+         sodipodi:cy="459.47394"
+         sodipodi:r1="253.44048"
+         sodipodi:r2="79.401889"
+         sodipodi:arg1="0.51885683"
+         sodipodi:arg2="-0.058349558"
+         inkscape:rounded="1.9775848e-16"
+         inkscape:randomized="0"
+         d="M 504.15137,585.15196 363.3338,454.8435 65.184523,587.23354 248.44374,530.43618 282.86525,206.03631 240.42359,393.14213 Z"
+         inkscape:transform-center-x="0.17078208"
+         inkscape:transform-center-y="-26.813688"
+         transform="matrix(-1.0953489,0,0,1.1508577,309.73678,-528.78909)"
+         sodipodi:insensitive="true"
+         inkscape:label="coverage_2" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer2"
+       inkscape:label="planet"
+       style="display:inline;fill:#000080"
+       transform="matrix(0.12501867,0,0,0.12501867,-223.96178,-247.25599)">
+      <circle
+         style="display:inline;fill:#1f77b4;fill-opacity:1;fill-rule:evenodd;paint-order:markers stroke fill"
+         id="path23454"
+         cx="0"
+         cy="0"
+         r="138.41312"
+         sodipodi:insensitive="true"
+         inkscape:label="ocean" />
+    </g>
+  </g>
+</svg>

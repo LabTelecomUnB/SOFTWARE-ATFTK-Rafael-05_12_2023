@@ -1,0 +1,571 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-theme="auto">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Serialisable &#8212; AFTK 0.1.0-dev</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "auto";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/toggle.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/style.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+    <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../../_static/clipboard.min.js"></script>
+    <script src="../../../../_static/copybutton.js"></script>
+    <script src="../../../../_static/design-tabs.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'contents/api_reference/py/utils/smet.utils.Serialisable';</script>
+    <link rel="icon" href="../../../../_static/logo.png"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="auto">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="../../../../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+    <p class="title logo__title">AFTK</p>
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../introduction/__main.html">
+                        Services Overview
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../user_guide/__main.html">
+                        User Guide
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../__main.html">
+                        API Reference
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../gallery/__main.html">
+                        Gallery
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../development/__main.html">
+                        Development
+                      </a>
+                    </li>
+                
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/RafaelLuz/aftk" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/aftk/0.0.0.dev1" title="PyPI" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-box"></i></span>
+            <label class="sr-only">PyPI</label></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../introduction/__main.html">
+                        Services Overview
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../user_guide/__main.html">
+                        User Guide
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../__main.html">
+                        API Reference
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../gallery/__main.html">
+                        Gallery
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../development/__main.html">
+                        Development
+                      </a>
+                    </li>
+                
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/RafaelLuz/aftk" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/aftk/0.0.0.dev1" title="PyPI" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-box"></i></span>
+            <label class="sr-only">PyPI</label></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item"><nav class="sidebar-indices-items">
+  <p class="sidebar-indices-items__title" role="heading" aria-level="1">Indices</p>
+  <ul class="indices-link">
+        <li class="toctree-l1">
+          <a class="reference internal"
+             href="../../../../genindex.html"
+             accesskey="I">General Index</a>
+        </li>
+  </ul>
+</nav></div>
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumbs">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><code class="docutils literal notranslate"><span class="pre">Serialisable</span></code></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="serialisable">
+<h1><code class="docutils literal notranslate"><span class="pre">Serialisable</span></code><a class="headerlink" href="#serialisable" title="Permalink to this heading">#</a></h1>
+<section id="typehints">
+<h2>Typehints<a class="headerlink" href="#typehints" title="Permalink to this heading">#</a></h2>
+<dl class="py data">
+<dt class="sig sig-object py" id="smet.utils.Serialisable.SubType">
+<span class="sig-prename descclassname"><span class="pre">Serialisable.</span></span><span class="sig-name descname"><span class="pre">SubType</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">TypeVar('SubType',</span> <span class="pre">bound=Serialisable)</span></em><a class="headerlink" href="#smet.utils.Serialisable.SubType" title="Permalink to this definition">#</a></dt>
+<dd><p>Typehint representing instances of <code class="xref py py-class docutils literal notranslate"><span class="pre">Serialisable</span></code> subclasses.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="smet.utils.Serialisable.PrimitiveSType">
+<span class="sig-prename descclassname"><span class="pre">Serialisable.</span></span><span class="sig-name descname"><span class="pre">PrimitiveSType</span></span><em class="property"><span class="w"> </span><span class="pre">TypeAlias</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">Union[None,</span> <span class="pre">str,</span> <span class="pre">Number,</span> <span class="pre">ndarray,</span> <span class="pre">Quantity,</span> <span class="pre">Timestamp,</span> <span class="pre">DatetimeIndex]</span></em><a class="headerlink" href="#smet.utils.Serialisable.PrimitiveSType" title="Permalink to this definition">#</a></dt>
+<dd><p>Alias representing the primitive types whose instances are allowed as
+Attributes in <code class="xref py py-class docutils literal notranslate"><span class="pre">Serialisable</span></code> subclasses.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="smet.utils.Serialisable.SType">
+<span class="sig-prename descclassname"><span class="pre">Serialisable.</span></span><span class="sig-name descname"><span class="pre">SType</span></span><em class="property"><span class="w"> </span><span class="pre">TypeAlias</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">PrimitiveStype</span> <span class="pre">|</span> <span class="pre">SubType</span> <span class="pre">|</span> <span class="pre">list[SType]</span> <span class="pre">|</span> <span class="pre">dict[str,</span> <span class="pre">SType]</span></em><a class="headerlink" href="#smet.utils.Serialisable.SType" title="Permalink to this definition">#</a></dt>
+<dd><p><strong>Serialisable Type</strong>: alias representing all types whose instances are allowed as serialisable attributes in <code class="xref py py-class docutils literal notranslate"><span class="pre">Serialisable</span></code> subclasses.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="smet.utils.Serialisable.RType">
+<span class="sig-prename descclassname"><span class="pre">Serialisable.</span></span><span class="sig-name descname"><span class="pre">RType</span></span><em class="property"><span class="w"> </span><span class="pre">TypeAlias</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">PrimitiveStype</span> <span class="pre">|</span> <span class="pre">SubType</span> <span class="pre">|</span> <span class="pre">list[SType]</span> <span class="pre">|</span> <span class="pre">dict[str,</span> <span class="pre">SType]</span></em><a class="headerlink" href="#smet.utils.Serialisable.RType" title="Permalink to this definition">#</a></dt>
+<dd><p><strong>Retrievable Type</strong>:Alias representing all types whose instances can be unserialised into in <code class="xref py py-class docutils literal notranslate"><span class="pre">Serialisable</span></code> subclasses.</p>
+</dd></dl>
+
+</section>
+<section id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">#</a></h2>
+<section id="point-and-triangle">
+<h3>Point and Triangle<a class="headerlink" href="#point-and-triangle" title="Permalink to this heading">#</a></h3>
+<p>The first and simplest example regards</p>
+<div class="literal-block-wrapper docutils container" id="serialisable-code-subclassing">
+<div class="code-block-caption"><span class="caption-text">Position: a subclass of Serialisable</span><a class="headerlink" href="#serialisable-code-subclassing" title="Permalink to this code">#</a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="gp">&gt;&gt;&gt; </span><span class="k">class</span> <span class="nc">Point</span><span class="p">(</span><span class="n">Serialisable</span><span class="p">):</span>
+<span class="linenos"> 2</span><span class="gp">...</span>
+<span class="linenos"> 3</span><span class="gp">... </span>   <span class="nd">@classmethod</span>
+<span class="linenos"> 4</span><span class="gp">... </span>   <span class="k">def</span> <span class="nf">_get_serialisable_property_names</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+<span class="linenos"> 5</span><span class="gp">... </span>       <span class="k">return</span> <span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">]</span>
+<span class="linenos"> 6</span><span class="gp">...</span>
+<span class="linenos"> 7</span><span class="gp">... </span>   <span class="nd">@classmethod</span>
+<span class="linenos"> 8</span><span class="gp">... </span>   <span class="k">def</span> <span class="nf">_get_copiable_property_names</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+<span class="linenos"> 9</span><span class="gp">... </span>       <span class="k">return</span> <span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">]</span>
+<span class="linenos">10</span><span class="gp">...</span>
+<span class="linenos">11</span><span class="gp">&gt;&gt;&gt; </span><span class="n">p0</span> <span class="o">=</span> <span class="n">Point</span><span class="p">()</span>
+<span class="linenos">12</span><span class="gp">&gt;&gt;&gt; </span><span class="n">Serialisable</span><span class="o">.</span><span class="n">serialise</span><span class="p">(</span><span class="n">p0</span><span class="p">)</span>
+<span class="linenos">13</span><span class="go">{&#39;x&#39;: None, &#39;y&#39;: None}</span>
+<span class="linenos">14</span><span class="gp">&gt;&gt;&gt; </span><span class="n">p1</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="linenos">15</span><span class="gp">&gt;&gt;&gt; </span><span class="n">p2</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#typehints">Typehints</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#smet.utils.Serialisable.SubType"><code class="docutils literal notranslate"><span class="pre">Serialisable.SubType</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#smet.utils.Serialisable.PrimitiveSType"><code class="docutils literal notranslate"><span class="pre">Serialisable.PrimitiveSType</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#smet.utils.Serialisable.SType"><code class="docutils literal notranslate"><span class="pre">Serialisable.SType</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#smet.utils.Serialisable.RType"><code class="docutils literal notranslate"><span class="pre">Serialisable.RType</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methods">Methods</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#point-and-triangle">Point and Triangle</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div class="tocsection sourcelink">
+    <a href="../../../../_sources/contents/api_reference/py/utils/smet.utils.Serialisable.rst.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+ <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .header").show();
+        $(".toggle .header").click(function() {
+            $(this).parent().children().not(".header").toggle(400);
+            $(this).parent().children(".header").toggleClass("open");
+        })
+        $(".toggle .header").hover(function() {
+            $(this).parent().children(".header").toggleClass("highlight");
+        })
+    });
+</script>
+
+  </body>
+</html>

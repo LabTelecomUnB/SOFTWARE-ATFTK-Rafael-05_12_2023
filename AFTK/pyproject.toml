@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools", "wheel", "Cython==3.0.0b1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aftk"
+version = "0.0.0-dev1"
+authors = [
+    {name = "Rafael R. L. Benevides", email = "rafael.rl.benevides@gmail.com"},
+]
+description = "Antenna Fields Tool Kit"
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = [
+    'antenna',
+    'electromagnetism',
+    'electric field',
+    'wave',
+    'propagation',
+]
+dependencies = [
+    # ---------------------------------------------------- Numerical and Scientific
+    'numpy',
+    'scipy',
+    'pandas',
+
+    # ----------------------------------------------------------------- Operational
+    #'astropy',
+    #'fiona',
+    #'shapely',
+
+    # ------------------------------------------------------------------ persisting
+    'h5py',
+
+    # -------------------------------------------------------------------- plotting
+    'matplotlib',
+    #'PySide2',
+    #'PySide2-stubs',
+    'PyQt5',
+    'PyQt5-stubs',
+    'pyvista',
+    'pyvistaqt',
+    'imageio-ffmpeg',
+    ]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Programming Language :: C",
+    "Programming Language :: Cython",
+    "Programming Language :: Python :: 3.10",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Telecommunications Industry"
+]
+
+[tool.setuptools]
+include-package-data = true
+packages = [
+    'aftk',
+]
